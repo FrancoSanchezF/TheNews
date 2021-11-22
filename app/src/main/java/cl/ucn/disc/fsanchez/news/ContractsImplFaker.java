@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 Franco Sánchez Flores
+ * Copyright (c) 2021 Franco Sánchez Flores
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction, including
@@ -15,18 +15,5 @@
 
 package cl.ucn.disc.fsanchez.news;
 
-import org.junit.Test;
-
-import static org.junit.Assert.*;
-
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
- */
-public class ExampleUnitTest {
-  @Test
-  public void addition_isCorrect() {
-    assertEquals(4, 2 + 2);
-  }
+public class ContractsImplFaker {
 }

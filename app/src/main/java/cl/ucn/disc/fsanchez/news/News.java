@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 Franco Sánchez Flores
+ * Copyright (c) 2021 Franco Sánchez Flores
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction, including
@@ -37,7 +37,7 @@ public final class News {
    * The title.
    */
   @Getter
-  private final String title;
+  private String title;
 
   /**
    * The Source.

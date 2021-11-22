@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 Franco Sánchez Flores
+ * Copyright (c) 2021 Franco Sánchez Flores
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction, including
@@ -63,8 +63,14 @@ android {
             output.versionCodeOverride = project.ext.buildTimestamp
             output.versionNameOverride = project.ext.buildVersion + (variant.name == "debug" ? ".d" : ".r")
         }
-
     }
+
+    testOptions {
+        unitTests.all {
+            useJUnitPlatform()
+        }
+    }
+
 }
 
 dependencies {
@@ -77,6 +83,8 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
 
 
     // https://mvnrepository.com/artifact/com.jakewharton.threetenabp/threetenabp
@@ -100,6 +108,8 @@ dependencies {
     // https://mvnrepository.com/artifact/org.projectlombok/lombok
     compileOnly 'org.projectlombok:lombok:1.18.22'
     annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+    testImplementation 'org.projectlombok:lombok:1.18.22'
 
     // https://mvnrepository.com/artifact/com.squareup.leakcanary/leakcanary-android
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
