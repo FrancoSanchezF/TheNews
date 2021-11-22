@@ -27,5 +27,5 @@ public interface Contracts {
    *
    * @return all teh News in the backend.
    */
-  List<News> retrieveNews();
+  List<News> retrieveNews(int size);
 }
