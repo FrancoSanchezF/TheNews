@@ -13,13 +13,14 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package cl.ucn.disc.fsanchez.news;
+package cl.ucn.disc.fsanchez.news.model;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.threeten.bp.ZoneId;
 import org.threeten.bp.ZonedDateTime;
 
+import cl.ucn.disc.fsanchez.news.model.News;
 import lombok.extern.slf4j.Slf4j;
 
 /**

@@ -13,9 +13,11 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package cl.ucn.disc.fsanchez.news;
+package cl.ucn.disc.fsanchez.news.service;
 
 import java.util.List;
+
+import cl.ucn.disc.fsanchez.news.model.News;
 
 /**
  * The Contracts of The News Project
