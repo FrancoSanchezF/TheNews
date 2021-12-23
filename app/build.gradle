@@ -114,6 +114,15 @@ dependencies {
     // https://mvnrepository.com/artifact/com.squareup.leakcanary/leakcanary-android
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
 
+    // ACRA Email
+    implementation("ch.acra:acra-mail:5.8.4")
+    // ACRA Dialog
+    implementation("ch.acra:acra-dialog:5.8.4")
+    // Acra Notification
+    implementation("ch.acra:acra-notification:5.8.4")
+    // Acra Toast
+    implementation("ch.acra:acra-toast:5.8.4")
+
 
 
 }
